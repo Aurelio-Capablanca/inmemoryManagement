@@ -3,8 +3,8 @@
 //
 #include <chrono>
 #include <iostream>
-#include <stdio.h>
-#include <string.h>
+#include <cstdio>
+#include <cstring>
 #include <vector>
 
 
@@ -71,7 +71,7 @@ int main() {
     std::string lastname;
     std::string email;
 
-    Persons* persons = new Persons();
+    auto* persons = new Persons();
     repositoryPeople repository;
 
     std::cout << "Enter Your Name !\n";
